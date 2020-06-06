@@ -1,0 +1,177 @@
+
+		*{
+			font-family: 'Source Sans Pro', sans-serif;
+			box-sizing: border-box;
+			color:#222;
+		}
+		body{
+			margin:0;
+		}
+		header{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: sticky;
+			top:0;
+			background-color: white;
+		}
+		header>img{
+			height:6vw;
+			margin:5px 1%;
+		}
+		ul{
+			list-style-type: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		
+		nav i{
+			display: none;
+			font-size: 25px;
+			opacity: 0;
+		}
+		nav ul{
+			margin:0;
+			padding:0;
+			display: flex;
+			align-items: center;
+			height:100%;
+			
+		}
+		@media (max-width:1100px){
+			nav ul{
+				display: none;
+			}
+			nav i{
+				opacity: 1;
+
+			}
+			header{
+				padding-right:5%; 
+			}
+			#product-info{
+				flex-direction: column;
+				align-items:flex-start;
+			}
+			
+			#paperback-price{
+				border-bottom: none;
+			}
+		}
+		
+		nav li{
+			display: inline-block;
+			
+		}
+		nav a{
+			padding:10px 20px;
+			font-weight: 800;
+			text-transform: uppercase;
+		}
+		nav a:hover{
+			background-color: grey;
+		}
+		main{
+			background-color: #f8f8f8;
+			padding:0 10%;
+		}
+		article{
+			background-color: #ffffff;
+			padding:0 10% 10% 10%;
+		}
+		#product-info{
+			display:flex;
+			padding-bottom: 2%;
+		}
+		#product-info>img{
+			width:40%;
+			padding:0 0.5% ;
+			background-color: #cecece;
+			
+		}
+		#information-div{
+			padding-left: 1%;
+				
+		}
+		#product-info h1{
+			font-size:25px;
+			text-transform: uppercase;
+			font-weight: 1000;
+			letter-spacing: 2px;
+			margin-bottom: 0;
+		}
+		#author-name{
+			font-weight:500;
+			margin-top: 0;
+		}
+		
+		#product-info button{
+			background-color:#f0859d; 
+			color:white;
+			padding:5% 0;
+			font-size:17px;
+			border:none;
+			width:100%;
+			margin: 7% 0 0 0;
+		}
+		#product-info button>i{
+			
+			color:white;
+			margin-right: 5%;
+		}
+		#paperback-price{
+			margin-top: 8%;
+			padding:5% 0;
+
+			
+		}
+		#paperback-price>div{
+			display: flex;
+			justify-content: flex-start;
+			
+		}
+		
+		#paperback-price p{
+			margin:0;
+		}
+		#paperback-price h2{
+			margin:0 2% 0 0;
+			font-size:19px; 
+		}
+		#product-description,#author,#paperback-price{
+			border:2px solid #dedede;
+			border-left:0;
+			border-right:0;
+		}
+		#product-description a{
+			color:#1114ac;
+			
+		}
+		#product-description{
+			padding-bottom: 2%;
+
+		}
+		#information-div i, #product-details i{
+			color:#fcb81f ;
+		}
+		#product-details>h2{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+
+		}
+		#product-details ul{
+			padding-left: 0;
+		}
+		#product-details li{
+			line-height: 40px;
+		}
+		#paperback-price p:nth-child(2), p:nth-child(3){
+			color:#8d2d21;
+		}
+		#paperback-price p:nth-child(2){
+			font-size: 20px;
+		}
+		#author>p:nth-child(2){
+			margin-left:2%;
+		}
